@@ -1,0 +1,8 @@
+Color Principal #007A33
+Color Secundario #00263E
+Fondo principal  #F7F7F7
+Fondo secundario #FFFFFF
+Letra principal #1C1C1C
+Letra secundaria #656463
+Titulo principal #00263E
+Titulo secundario #007A33

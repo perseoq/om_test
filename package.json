@@ -1,0 +1,20 @@
+{
+  "name": "observatorio_de_movilidad",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -i ./src/input.css -o ./css/styles.css --minify",
+    "watch": "tailwindcss -i ./src/input.css -o ./css/styles.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  },
+  "dependencies": {
+    "localtunnel": "^2.0.2"
+  }
+}

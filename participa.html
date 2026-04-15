@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Participa — Observatorio de Movilidad A.C.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body class="font-sans text-om-text bg-white">
+
+  <!-- HEADER -->
+  <header class="fixed top-0 inset-x-0 z-50 bg-white border-b-[3px] border-om-green shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8 h-[72px] flex items-center justify-between">
+      <a href="index.html" class="flex-shrink-0">
+        <img src="Logo_header_principal.png" alt="Observatorio de Movilidad A.C." class="h-11 w-auto"/>
+      </a>
+      <button id="nav-toggle" class="md:hidden p-2 rounded-lg text-om-navy hover:bg-gray-100 transition-colors">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+      <nav class="hidden md:flex items-center gap-0.5">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="quienes-somos.html" class="nav-link">Quiénes somos</a>
+        <a href="que-hacemos.html" class="nav-link">Qué hacemos</a>
+        <a href="principios.html" class="nav-link">Principios</a>
+        <a href="estructura.html" class="nav-link">Estructura</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+        <a href="participa.html" class="ml-3 px-5 py-2.5 text-sm font-bold text-white bg-om-green rounded-full hover:bg-green-800 transition-colors shadow-sm nav-link-active">Participa</a>
+      </nav>
+    </div>
+    <div id="mobile-nav" class="hidden md:hidden bg-white border-t border-gray-100 px-4 py-3">
+      <div class="flex flex-col gap-0.5">
+        <a href="index.html" class="px-3 py-2.5 text-sm font-semibold text-om-navy hover:text-om-green rounded-lg">Inicio</a>
+        <a href="quienes-somos.html" class="px-3 py-2.5 text-sm font-semibold text-om-navy hover:text-om-green rounded-lg">Quiénes somos</a>
+        <a href="que-hacemos.html" class="px-3 py-2.5 text-sm font-semibold text-om-navy hover:text-om-green rounded-lg">Qué hacemos</a>
+        <a href="principios.html" class="px-3 py-2.5 text-sm font-semibold text-om-navy hover:text-om-green rounded-lg">Principios</a>
+        <a href="estructura.html" class="px-3 py-2.5 text-sm font-semibold text-om-navy hover:text-om-green rounded-lg">Estructura</a>
+        <a href="contacto.html" class="px-3 py-2.5 text-sm font-semibold text-om-navy hover:text-om-green rounded-lg">Contacto</a>
+        <a href="participa.html" class="mt-2 px-4 py-2.5 text-sm font-bold text-white bg-om-green rounded-full text-center block">Participa</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PHOTO HERO -->
+  <section class="relative pt-[72px]">
+    <div class="relative py-32 pt-[130px]" style="background-image:url('asstes/imgs/taxis_1.jpg');background-size:cover;background-position:center;">
+      <div class="absolute inset-0 bg-gradient-to-br from-om-navy/95 to-om-navy/70"></div>
+      <div class="relative max-w-7xl mx-auto px-4 lg:px-8">
+        <span class="inline-block text-om-green text-xs font-bold uppercase tracking-widest mb-4">Observatorio de Movilidad A.C.</span>
+        <h2 class="text-4xl md:text-6xl font-extrabold text-white leading-tight max-w-3xl">Participa</h2>
+        <p class="mt-4 text-white/70 text-xl max-w-xl">Sé parte del cambio en la movilidad de Jalisco.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE IDENTITY -->
+  <section class="bg-white py-10 border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 md:gap-10">
+        <img src="Logo_Hero_paginas.png" alt="Observatorio de Movilidad" class="h-28 w-auto flex-shrink-0"/>
+        <div class="w-px h-20 bg-om-green/20 hidden md:block flex-shrink-0"></div>
+        <div>
+          <nav class="text-xs text-om-muted mb-2">
+            <a href="index.html" class="hover:text-om-green transition-colors">Inicio</a>
+            <span class="mx-2 text-gray-300">/</span>
+            <span class="font-semibold text-om-navy">Participa</span>
+          </nav>
+          <h1 class="text-4xl font-extrabold text-om-navy leading-tight">Participa</h1>
+          <p class="text-om-muted mt-2 text-lg">¿Quieres analizar, proponer o aportar datos?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTRO TEXT -->
+  <section class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <span class="accent-bar"></span>
+          <span class="text-xs font-bold uppercase tracking-widest text-om-green">Espacio abierto</span>
+          <h2 class="text-3xl font-extrabold text-om-navy mt-3 mb-6 leading-tight">Un espacio para todos los comprometidos con la movilidad</h2>
+          <p class="text-om-text leading-relaxed text-lg">
+            El Observatorio de Movilidad es un espacio abierto a la participación de personas y organizaciones comprometidas con mejorar la movilidad. Buscamos integrar un grupo diverso e interdisciplinario: investigadores, especialistas, estudiantes, profesionales y ciudadanos con interés en aportar desde su experiencia.
+          </p>
+          <p class="text-om-text leading-relaxed text-lg mt-5">
+            Puedes participar como asociado, colaborador o aliado, contribuyendo en el análisis, la generación de información o las actividades del Observatorio.
+          </p>
+          <a href="contacto.html" class="btn-green inline-block mt-8 px-8 py-4 text-base font-bold rounded-full shadow-sm hover:bg-green-800 transition-colors">Da el primer paso</a>
+        </div>
+        <div class="relative">
+          <div class="overflow-hidden rounded-2xl aspect-[4/3] shadow-lg">
+            <img src="asstes/imgs/taxis_2.jpg" alt="Participa" class="w-full h-full object-cover"/>
+          </div>
+          <div class="absolute -bottom-6 -left-6 bg-om-green text-white rounded-2xl p-5 shadow-xl hidden md:block">
+            <div class="text-3xl font-extrabold">3</div>
+            <div class="text-sm font-semibold mt-1 opacity-90">formas de participar</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIG QUOTE -->
+  <section class="bg-om-bg py-20">
+    <div class="max-w-4xl mx-auto px-4 lg:px-8 text-center">
+      <span class="accent-bar mx-auto"></span>
+      <p class="text-4xl md:text-5xl font-extrabold text-om-navy leading-tight mt-4">
+        "Este espacio también es para ti."
+      </p>
+      <p class="text-om-muted mt-6 text-lg max-w-xl mx-auto">Tu experiencia, conocimiento y compromiso pueden transformar la movilidad en Jalisco.</p>
+    </div>
+  </section>
+
+  <!-- 3 PARTICIPATION MODE CARDS -->
+  <section class="bg-white py-20">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <div class="text-center mb-14">
+        <span class="accent-bar mx-auto"></span>
+        <span class="text-xs font-bold uppercase tracking-widest text-om-green">Modalidades</span>
+        <h2 class="text-3xl font-extrabold text-om-navy mt-3">¿Cómo quieres participar?</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Asociado -->
+        <div class="card overflow-hidden group flex flex-col">
+          <div class="h-56 overflow-hidden">
+            <img src="asstes/imgs/taxis_2.jpg" alt="Asociado" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+          </div>
+          <div class="p-8 flex flex-col flex-1">
+            <div class="w-12 h-12 rounded-xl bg-om-green/10 flex items-center justify-center mb-4">
+              <span class="text-2xl">🏛️</span>
+            </div>
+            <h3 class="text-xl font-extrabold text-om-navy mb-3">Asociado</h3>
+            <p class="text-om-muted leading-relaxed text-sm flex-1">Forma parte activa del Observatorio. Como asociado, participas en la toma de decisiones, los comités técnicos y las actividades principales de la organización.</p>
+            <a href="contacto.html" class="mt-6 inline-block text-om-green font-bold text-sm hover:underline">Quiero ser asociado →</a>
+          </div>
+        </div>
+
+        <!-- Colaborador -->
+        <div class="card overflow-hidden group flex flex-col">
+          <div class="h-56 overflow-hidden">
+            <img src="asstes/imgs/ciclovia_2.png" alt="Colaborador" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+          </div>
+          <div class="p-8 flex flex-col flex-1">
+            <div class="w-12 h-12 rounded-xl bg-om-green/10 flex items-center justify-center mb-4">
+              <span class="text-2xl">🚲</span>
+            </div>
+            <h3 class="text-xl font-extrabold text-om-navy mb-3">Colaborador</h3>
+            <p class="text-om-muted leading-relaxed text-sm flex-1">Aporta tu expertise en proyectos específicos. Contribuye con análisis, datos, investigación o comunicación sin necesidad de un compromiso permanente.</p>
+            <a href="contacto.html" class="mt-6 inline-block text-om-green font-bold text-sm hover:underline">Quiero colaborar →</a>
+          </div>
+        </div>
+
+        <!-- Aliado -->
+        <div class="card overflow-hidden group flex flex-col">
+          <div class="h-56 overflow-hidden">
+            <img src="asstes/imgs/puerto_1.jpg" alt="Aliado" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
+          </div>
+          <div class="p-8 flex flex-col flex-1">
+            <div class="w-12 h-12 rounded-xl bg-om-green/10 flex items-center justify-center mb-4">
+              <span class="text-2xl">🤝</span>
+            </div>
+            <h3 class="text-xl font-extrabold text-om-navy mb-3">Aliado</h3>
+            <p class="text-om-muted leading-relaxed text-sm flex-1">Organizaciones, instituciones y empresas que comparten nuestra visión. Sumamos esfuerzos para ampliar el impacto del Observatorio en la mejora de la movilidad.</p>
+            <a href="contacto.html" class="mt-6 inline-block text-om-green font-bold text-sm hover:underline">Quiero ser aliado →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="bg-om-green py-20">
+    <div class="max-w-4xl mx-auto px-4 lg:px-8 text-center">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Da el primer paso</h2>
+      <p class="text-white/80 text-lg mb-8 max-w-xl mx-auto">Escríbenos y cuéntanos cómo te gustaría contribuir. Estamos listos para sumar tu voz.</p>
+      <a href="contacto.html" class="btn-white inline-block px-8 py-4 text-base font-bold rounded-full shadow-lg hover:shadow-xl transition-all">Contáctanos</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-om-navy">
+    <div class="max-w-7xl mx-auto px-6 pt-16 pb-8">
+      <div class="grid md:grid-cols-4 gap-10 pb-10 border-b border-white/10">
+        <div>
+          <img src="Logo_header_principal.png" alt="Observatorio de Movilidad" class="h-10 w-auto mb-5 brightness-0 invert"/>
+          <p class="text-sm text-white/55 leading-relaxed">Espacio independiente y ciudadano que analiza, evalúa y propone mejoras para la movilidad en Jalisco.</p>
+          <div class="flex gap-3 mt-6">
+            <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-full bg-white/10 hover:bg-om-green flex items-center justify-center transition-colors duration-200">
+              <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook" class="w-9 h-9 rounded-full bg-white/10 hover:bg-om-green flex items-center justify-center transition-colors duration-200">
+              <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-om-green mb-5">Páginas</h4>
+          <ul class="space-y-3">
+            <li><a href="index.html" class="text-sm text-white/55 hover:text-white transition-colors">Inicio</a></li>
+            <li><a href="quienes-somos.html" class="text-sm text-white/55 hover:text-white transition-colors">Quiénes somos</a></li>
+            <li><a href="que-hacemos.html" class="text-sm text-white/55 hover:text-white transition-colors">Qué hacemos</a></li>
+            <li><a href="principios.html" class="text-sm text-white/55 hover:text-white transition-colors">Principios</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-om-green mb-5">Comunidad</h4>
+          <ul class="space-y-3">
+            <li><a href="estructura.html" class="text-sm text-white/55 hover:text-white transition-colors">Estructura</a></li>
+            <li><a href="participa.html" class="text-sm text-white/55 hover:text-white transition-colors">Participa</a></li>
+            <li><a href="contacto.html" class="text-sm text-white/55 hover:text-white transition-colors">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-widest text-om-green mb-5">Comités Técnicos</h4>
+          <ul class="space-y-3">
+            <li><a href="estructura.html" class="text-sm text-white/55 hover:text-white transition-colors">Seguridad Vial</a></li>
+            <li><a href="estructura.html" class="text-sm text-white/55 hover:text-white transition-colors">Transporte Público</a></li>
+            <li><a href="estructura.html" class="text-sm text-white/55 hover:text-white transition-colors">Movilidad Activa</a></li>
+            <li><a href="estructura.html" class="text-sm text-white/55 hover:text-white transition-colors">Datos y Evaluación</a></li>
+            <li><a href="estructura.html" class="text-sm text-white/55 hover:text-white transition-colors">Participación Ciudadana</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row justify-between items-center pt-6 gap-2 text-xs text-white/30">
+        <span>© 2025 Observatorio de Movilidad A.C. Todos los derechos reservados.</span>
+        <span>Jalisco, México</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('nav-toggle').addEventListener('click', function(){
+      document.getElementById('mobile-nav').classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
