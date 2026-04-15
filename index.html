@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="stylesheet" href="css/effects.css"/>
 </head>
 <body class="bg-white">
 
@@ -51,7 +52,7 @@
      HERO — imagen de fondo con overlay oscuro
      ══════════════════════════════════════════ -->
 <section class="relative min-h-screen flex items-center" style="background-image:url('asstes/imgs/pagina_principal_1.jpg');background-size:cover;background-position:center;">
-  <div class="absolute inset-0 bg-gradient-to-br from-om-navy/95 via-om-navy/85 to-black/70"></div>
+  <div class="absolute inset-0 bg-gradient-to-br from-om-navy/95 via-om-navy/85 to-black/70 parallax-bg"></div>
   <!-- Decoración -->
   <div class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white to-transparent"></div>
 
@@ -63,16 +64,16 @@
         Jalisco · Independiente · Ciudadano
       </span>
 
-      <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.1] mb-8">
+      <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.1] mb-8 reveal">
         Observatorio de
         <span class="text-om-green block mt-1">Movilidad</span>
       </h1>
 
       <!-- 3 taglines del OM.md -->
       <div class="space-y-3 mb-10 border-l-2 border-om-green/50 pl-5">
-        <p class="text-white/80 italic text-lg leading-relaxed">Analizamos decisiones públicas, generamos información clara y proponemos mejoras para la movilidad en Jalisco, desde una perspectiva independiente y ciudadana.</p>
-        <p class="text-white/70 italic">Así nos movemos. Así queremos movernos.</p>
-        <p class="text-white/70 italic">Entender la movilidad para cambiarla.</p>
+        <p class="text-white/80 italic text-lg leading-relaxed reveal">Analizamos decisiones públicas, generamos información clara y proponemos mejoras para la movilidad en Jalisco, desde una perspectiva independiente y ciudadana.</p>
+        <p class="text-white/70 italic reveal">Así nos movemos. Así queremos movernos.</p>
+        <p class="text-white/70 italic reveal">Entender la movilidad para cambiarla.</p>
       </div>
 
       <div class="flex flex-wrap gap-4">
@@ -93,7 +94,7 @@
       <!-- Imagen -->
       <div class="relative">
         <img src="asstes/imgs/pagina_principal_2.jpg" alt="Movilidad urbana en Jalisco"
-             class="w-full h-[520px] object-cover rounded-2xl shadow-2xl"/>
+             class="w-full h-[520px] object-cover rounded-2xl shadow-2xl split-img-fx reveal-right"/>
         <!-- Badge flotante -->
         <div class="absolute -bottom-5 -right-5 bg-om-green text-white px-6 py-4 rounded-2xl shadow-xl hidden md:block">
           <p class="text-2xl font-extrabold">A.C.</p>
@@ -102,11 +103,11 @@
       </div>
 
       <!-- Texto -->
-      <div>
+      <div class="reveal-left">
         <div class="section-eyebrow">
-          <span class="text-xs font-bold uppercase tracking-widest text-om-green">Bienvenida</span>
+          <span class="text-xs font-bold uppercase tracking-widest text-om-green reveal" data-delay="0">Bienvenida</span>
         </div>
-        <h2 class="text-4xl font-extrabold text-om-navy leading-tight mb-1">
+        <h2 class="text-4xl font-extrabold text-om-navy leading-tight mb-1 reveal">
           Porque moverse mejor<br/>también es vivir mejor
         </h2>
         <span class="accent-bar"></span>
@@ -142,16 +143,16 @@
     <div class="text-center mb-14">
       <div class="inline-flex items-center gap-2 mb-4">
         <div class="w-8 h-0.5 bg-om-green"></div>
-        <span class="text-xs font-bold uppercase tracking-widest text-om-green">Explora el Observatorio</span>
+        <span class="text-xs font-bold uppercase tracking-widest text-om-green reveal" data-delay="0">Explora el Observatorio</span>
         <div class="w-8 h-0.5 bg-om-green"></div>
       </div>
-      <h2 class="text-4xl font-extrabold text-om-navy">¿Qué quieres conocer?</h2>
+      <h2 class="text-4xl font-extrabold text-om-navy reveal">¿Qué quieres conocer?</h2>
     </div>
 
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" data-stagger>
       <!-- Card 1 -->
-      <a href="quienes-somos.html" class="card group">
-        <div class="overflow-hidden h-48">
+      <a href="quienes-somos.html" class="card group reveal card-glow">
+        <div class="overflow-hidden h-48 img-overlay">
           <img src="asstes/imgs/autobuses.jpg" alt="Quiénes somos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
         </div>
         <div class="p-6">
@@ -162,8 +163,8 @@
         </div>
       </a>
       <!-- Card 2 -->
-      <a href="que-hacemos.html" class="card group">
-        <div class="overflow-hidden h-48">
+      <a href="que-hacemos.html" class="card group reveal card-glow">
+        <div class="overflow-hidden h-48 img-overlay">
           <img src="asstes/imgs/autobus_dentro_1.jpg" alt="Qué hacemos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
         </div>
         <div class="p-6">
@@ -174,8 +175,8 @@
         </div>
       </a>
       <!-- Card 3 -->
-      <a href="principios.html" class="card group">
-        <div class="overflow-hidden h-48">
+      <a href="principios.html" class="card group reveal card-glow">
+        <div class="overflow-hidden h-48 img-overlay">
           <img src="asstes/imgs/ciclovia_1.png" alt="Principios" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
         </div>
         <div class="p-6">
@@ -186,8 +187,8 @@
         </div>
       </a>
       <!-- Card 4 -->
-      <a href="participa.html" class="card group">
-        <div class="overflow-hidden h-48">
+      <a href="participa.html" class="card group reveal card-glow">
+        <div class="overflow-hidden h-48 img-overlay">
           <img src="asstes/imgs/ciclovia_2.png" alt="Participa" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
         </div>
         <div class="p-6">
@@ -206,8 +207,8 @@
      ══════════════════════════════════════════ -->
 <section class="bg-om-green py-20">
   <div class="max-w-4xl mx-auto px-6 text-center">
-    <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Este espacio también es para ti</h2>
-    <p class="text-white/85 text-lg mb-9 max-w-xl mx-auto">El Observatorio de Movilidad es un espacio abierto a la participación ciudadana.</p>
+    <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4 reveal">Este espacio también es para ti</h2>
+    <p class="text-white/85 text-lg mb-9 max-w-xl mx-auto reveal" data-delay="100">El Observatorio de Movilidad es un espacio abierto a la participación ciudadana.</p>
     <a href="contacto.html" class="btn-white">Contáctanos</a>
   </div>
 </section>
@@ -220,7 +221,7 @@
     <div class="grid md:grid-cols-4 gap-10 pb-10 border-b border-white/10">
       <div>
         <!-- brightness-0 invert convierte el logo (verde+azul) a blanco sobre el fondo oscuro -->
-        <img src="Logo_header_principal.png" alt="Observatorio de Movilidad" class="h-10 w-auto mb-5 brightness-0 invert"/>
+        <img src="Logo_header_principal.png" alt="Observatorio de Movilidad" class="h-10 w-auto mb-5 brightness-0 invert reveal"/>
         <p class="text-sm text-white/55 leading-relaxed">Espacio independiente y ciudadano que analiza, evalúa y propone mejoras para la movilidad en Jalisco.</p>
         <div class="flex gap-3 mt-6">
           <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-full bg-white/10 hover:bg-om-green flex items-center justify-center transition-colors duration-200">
@@ -271,5 +272,6 @@
     document.getElementById('mobile-nav').classList.toggle('hidden');
   });
 </script>
+<script src="js/effects.js" defer></script>
 </body>
 </html>

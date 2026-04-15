@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="stylesheet" href="css/effects.css"/>
 </head>
 <body class="font-sans text-om-text bg-white">
 
@@ -48,11 +49,11 @@
   <!-- PHOTO HERO -->
   <section class="relative pt-[72px]">
     <div class="relative py-32 pt-[130px]" style="background-image:url('asstes/imgs/autobus_3.jpg');background-size:cover;background-position:center;">
-      <div class="absolute inset-0 bg-gradient-to-br from-om-navy/95 to-om-navy/70"></div>
+      <div class="absolute inset-0 bg-gradient-to-br from-om-navy/95 to-om-navy/70 parallax-bg"></div>
       <div class="relative max-w-7xl mx-auto px-4 lg:px-8">
-        <span class="inline-block text-om-green text-xs font-bold uppercase tracking-widest mb-4">Observatorio de Movilidad A.C.</span>
-        <h2 class="text-4xl md:text-6xl font-extrabold text-white leading-tight max-w-3xl">Estructura y Comités</h2>
-        <p class="mt-4 text-white/70 text-xl max-w-xl">Organización clara para un trabajo técnico y ciudadano efectivo.</p>
+        <span class="inline-block text-om-green text-xs font-bold uppercase tracking-widest mb-4 reveal">Observatorio de Movilidad A.C.</span>
+        <h2 class="text-4xl md:text-6xl font-extrabold text-white leading-tight max-w-3xl reveal">Estructura y Comités</h2>
+        <p class="mt-4 text-white/70 text-xl max-w-xl reveal">Organización clara para un trabajo técnico y ciudadano efectivo.</p>
       </div>
     </div>
   </section>
@@ -61,9 +62,9 @@
   <section class="bg-white py-10 border-b border-gray-100">
     <div class="max-w-7xl mx-auto px-4 lg:px-8">
       <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 md:gap-10">
-        <img src="Logo_Hero_paginas.png" alt="Observatorio de Movilidad" class="h-28 w-auto flex-shrink-0"/>
+        <img src="Logo_Hero_paginas.png" alt="Observatorio de Movilidad" class="h-28 w-auto flex-shrink-0 reveal-left"/>
         <div class="w-px h-20 bg-om-green/20 hidden md:block flex-shrink-0"></div>
-        <div>
+        <div class="reveal-right">
           <nav class="text-xs text-om-muted mb-2">
             <a href="index.html" class="hover:text-om-green transition-colors">Inicio</a>
             <span class="mx-2 text-gray-300">/</span>
@@ -81,8 +82,8 @@
     <div class="max-w-7xl mx-auto px-4 lg:px-8">
       <div class="max-w-3xl mx-auto text-center mb-16">
         <span class="accent-bar mx-auto"></span>
-        <span class="text-xs font-bold uppercase tracking-widest text-om-green">Organización</span>
-        <h2 class="text-3xl font-extrabold text-om-navy mt-3 mb-6">Cómo estamos organizados</h2>
+        <span class="text-xs font-bold uppercase tracking-widest text-om-green reveal" data-delay="0">Organización</span>
+        <h2 class="text-3xl font-extrabold text-om-navy mt-3 mb-6 reveal">Cómo estamos organizados</h2>
         <p class="text-om-text leading-relaxed text-lg">El Observatorio se organiza para facilitar el trabajo técnico y la participación de sus integrantes.</p>
       </div>
     </div>
@@ -93,12 +94,12 @@
     <div class="max-w-7xl mx-auto px-4 lg:px-8">
       <div class="text-center mb-14">
         <span class="block w-12 h-1 bg-om-green rounded-full mt-3 mb-5 mx-auto"></span>
-        <span class="text-xs font-bold uppercase tracking-widest text-om-green">Membresía</span>
-        <h2 class="text-3xl font-extrabold text-white mt-3">Tipos de asociados</h2>
+        <span class="text-xs font-bold uppercase tracking-widest text-om-green reveal" data-delay="0">Membresía</span>
+        <h2 class="text-3xl font-extrabold text-white mt-3 reveal">Tipos de asociados</h2>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <!-- Fundadores -->
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-colors">
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-colors reveal">
           <div class="w-14 h-14 rounded-xl bg-om-green/20 flex items-center justify-center mb-5">
             <span class="text-3xl">🏛️</span>
           </div>
@@ -106,7 +107,7 @@
           <p class="text-white/55 leading-relaxed text-sm">Personas que impulsaron la creación del Observatorio y contribuyeron a establecer su misión, visión y estructura desde sus inicios.</p>
         </div>
         <!-- Activos -->
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-colors">
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-colors reveal">
           <div class="w-14 h-14 rounded-xl bg-om-green/20 flex items-center justify-center mb-5">
             <span class="text-3xl">🤝</span>
           </div>
@@ -114,7 +115,7 @@
           <p class="text-white/55 leading-relaxed text-sm">Integrantes que participan de manera regular en las actividades, comités y decisiones del Observatorio, aportando su conocimiento y tiempo.</p>
         </div>
         <!-- Honorarios -->
-        <div class="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-colors">
+        <div class="bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 transition-colors reveal">
           <div class="w-14 h-14 rounded-xl bg-om-green/20 flex items-center justify-center mb-5">
             <span class="text-3xl">⭐</span>
           </div>
@@ -130,13 +131,13 @@
     <div class="max-w-7xl mx-auto px-4 lg:px-8">
       <div class="max-w-3xl mx-auto text-center mb-14">
         <span class="accent-bar mx-auto"></span>
-        <span class="text-xs font-bold uppercase tracking-widest text-om-green">Comités técnicos</span>
-        <h2 class="text-3xl font-extrabold text-om-navy mt-3 mb-4">Los grupos de trabajo especializados</h2>
-        <p class="text-om-muted leading-relaxed">Estos espacios reúnen distintas perspectivas y conocimientos para analizar problemas, generar propuestas y dar seguimiento a los temas más relevantes de la movilidad.</p>
+        <span class="text-xs font-bold uppercase tracking-widest text-om-green reveal" data-delay="0">Comités técnicos</span>
+        <h2 class="text-3xl font-extrabold text-om-navy mt-3 mb-4 reveal">Los grupos de trabajo especializados</h2>
+        <p class="text-om-muted leading-relaxed reveal" data-delay="100">Estos espacios reúnen distintas perspectivas y conocimientos para analizar problemas, generar propuestas y dar seguimiento a los temas más relevantes de la movilidad.</p>
       </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" data-stagger>
         <!-- Seguridad Vial -->
-        <div class="card p-8 flex flex-col gap-4">
+        <div class="card p-8 flex flex-col gap-4 reveal-scale card-glow">
           <div class="w-14 h-14 rounded-xl bg-om-green/10 flex items-center justify-center flex-shrink-0">
             <span class="text-3xl">🚦</span>
           </div>
@@ -146,7 +147,7 @@
           </div>
         </div>
         <!-- Transporte Público -->
-        <div class="card p-8 flex flex-col gap-4">
+        <div class="card p-8 flex flex-col gap-4 reveal-scale card-glow">
           <div class="w-14 h-14 rounded-xl bg-om-green/10 flex items-center justify-center flex-shrink-0">
             <span class="text-3xl">🚌</span>
           </div>
@@ -156,7 +157,7 @@
           </div>
         </div>
         <!-- Movilidad Activa -->
-        <div class="card p-8 flex flex-col gap-4">
+        <div class="card p-8 flex flex-col gap-4 reveal-scale card-glow">
           <div class="w-14 h-14 rounded-xl bg-om-green/10 flex items-center justify-center flex-shrink-0">
             <span class="text-3xl">🚲</span>
           </div>
@@ -166,7 +167,7 @@
           </div>
         </div>
         <!-- Datos y Evaluación -->
-        <div class="card p-8 flex flex-col gap-4">
+        <div class="card p-8 flex flex-col gap-4 reveal-scale card-glow">
           <div class="w-14 h-14 rounded-xl bg-om-green/10 flex items-center justify-center flex-shrink-0">
             <span class="text-3xl">📊</span>
           </div>
@@ -176,7 +177,7 @@
           </div>
         </div>
         <!-- Participación Ciudadana -->
-        <div class="card p-8 flex flex-col gap-4 sm:col-span-2 lg:col-span-1">
+        <div class="card p-8 flex flex-col gap-4 sm:col-span-2 lg:col-span-1 reveal-scale card-glow">
           <div class="w-14 h-14 rounded-xl bg-om-green/10 flex items-center justify-center flex-shrink-0">
             <span class="text-3xl">🤝</span>
           </div>
@@ -194,17 +195,17 @@
     <div class="max-w-7xl mx-auto px-4 lg:px-8">
       <div class="text-center mb-12">
         <span class="accent-bar mx-auto"></span>
-        <span class="text-xs font-bold uppercase tracking-widest text-om-green">Galería</span>
-        <h2 class="text-3xl font-extrabold text-om-navy mt-3">El transporte que estudiamos</h2>
+        <span class="text-xs font-bold uppercase tracking-widest text-om-green reveal" data-delay="0">Galería</span>
+        <h2 class="text-3xl font-extrabold text-om-navy mt-3 reveal">El transporte que estudiamos</h2>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="overflow-hidden rounded-2xl shadow-sm aspect-[4/3]">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6" data-stagger>
+        <div class="overflow-hidden rounded-2xl shadow-sm aspect-[4/3] gallery-item reveal">
           <img src="asstes/imgs/autobus_dentro_1.jpg" alt="Interior de autobús" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"/>
         </div>
-        <div class="overflow-hidden rounded-2xl shadow-sm aspect-[4/3]">
+        <div class="overflow-hidden rounded-2xl shadow-sm aspect-[4/3] gallery-item reveal">
           <img src="asstes/imgs/autobus_dentro_2.jpg" alt="Usuarios del transporte" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"/>
         </div>
-        <div class="overflow-hidden rounded-2xl shadow-sm aspect-[4/3]">
+        <div class="overflow-hidden rounded-2xl shadow-sm aspect-[4/3] gallery-item reveal">
           <img src="asstes/imgs/old_autobus_1.jpeg" alt="Historia del transporte" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"/>
         </div>
       </div>
@@ -214,8 +215,8 @@
   <!-- CTA BANNER -->
   <section class="bg-om-green py-20">
     <div class="max-w-4xl mx-auto px-4 lg:px-8 text-center">
-      <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">¿Te interesa formar parte de un comité?</h2>
-      <p class="text-white/80 text-lg mb-8 max-w-xl mx-auto">Cada comité es un espacio para aportar tu conocimiento y contribuir a soluciones concretas para la movilidad en Jalisco.</p>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4 reveal">¿Te interesa formar parte de un comité?</h2>
+      <p class="text-white/80 text-lg mb-8 max-w-xl mx-auto reveal" data-delay="100">Cada comité es un espacio para aportar tu conocimiento y contribuir a soluciones concretas para la movilidad en Jalisco.</p>
       <a href="contacto.html" class="btn-white inline-block px-8 py-4 text-base font-bold rounded-full shadow-lg hover:shadow-xl transition-all">Contáctanos</a>
     </div>
   </section>
@@ -225,7 +226,7 @@
     <div class="max-w-7xl mx-auto px-6 pt-16 pb-8">
       <div class="grid md:grid-cols-4 gap-10 pb-10 border-b border-white/10">
         <div>
-          <img src="Logo_header_principal.png" alt="Observatorio de Movilidad" class="h-10 w-auto mb-5 brightness-0 invert"/>
+          <img src="Logo_header_principal.png" alt="Observatorio de Movilidad" class="h-10 w-auto mb-5 brightness-0 invert reveal"/>
           <p class="text-sm text-white/55 leading-relaxed">Espacio independiente y ciudadano que analiza, evalúa y propone mejoras para la movilidad en Jalisco.</p>
           <div class="flex gap-3 mt-6">
             <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-full bg-white/10 hover:bg-om-green flex items-center justify-center transition-colors duration-200">
@@ -276,5 +277,6 @@
       document.getElementById('mobile-nav').classList.toggle('hidden');
     });
   </script>
+  <script src="js/effects.js" defer></script>
 </body>
 </html>

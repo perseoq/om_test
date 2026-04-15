@@ -1,0 +1,197 @@
+/* ──────────────────────────────────────────────
+   SCROLL REVEAL
+   ────────────────────────────────────────────── */
+.reveal,
+.reveal-left,
+.reveal-right,
+.reveal-scale {
+  will-change: opacity, transform;
+  transition-property: opacity, transform;
+  transition-duration: 0.75s;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal        { opacity: 0; transform: translateY(44px); }
+.reveal-left   { opacity: 0; transform: translateX(-56px); }
+.reveal-right  { opacity: 0; transform: translateX(56px); }
+.reveal-scale  { opacity: 0; transform: scale(0.90); }
+
+.reveal.is-visible,
+.reveal-left.is-visible,
+.reveal-right.is-visible,
+.reveal-scale.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ──────────────────────────────────────────────
+   IMAGE HOVER OVERLAY (green tint)
+   ────────────────────────────────────────────── */
+.img-overlay {
+  position: relative;
+  overflow: hidden;
+}
+.img-overlay img {
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.img-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(0,122,51,0.45) 0%, rgba(0,38,62,0.30) 100%);
+  opacity: 0;
+  transition: opacity 0.45s ease;
+  pointer-events: none;
+}
+.img-overlay:hover img    { transform: scale(1.07); }
+.img-overlay:hover::after { opacity: 1; }
+
+/* ──────────────────────────────────────────────
+   CARD GLOW ON HOVER
+   ────────────────────────────────────────────── */
+.card-glow {
+  transition: box-shadow 0.35s ease, transform 0.35s ease;
+}
+.card-glow:hover {
+  box-shadow: 0 0 0 2px #007A33, 0 20px 48px rgba(0,122,51,0.18);
+  transform: translateY(-5px);
+}
+
+/* ──────────────────────────────────────────────
+   FLOATING BADGE (hero)
+   ────────────────────────────────────────────── */
+@keyframes om-float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-10px); }
+}
+.animate-float {
+  animation: om-float 4.5s ease-in-out infinite;
+}
+
+/* ──────────────────────────────────────────────
+   PULSING DOT (hero badge)
+   ────────────────────────────────────────────── */
+@keyframes om-pulse-dot {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(0,122,51,0.6); }
+  50%       { opacity: 0.8; box-shadow: 0 0 0 6px rgba(0,122,51,0); }
+}
+.pulse-dot {
+  animation: om-pulse-dot 2s ease-in-out infinite;
+}
+
+/* ──────────────────────────────────────────────
+   HERO PARALLAX BG
+   ────────────────────────────────────────────── */
+.parallax-bg {
+  will-change: transform;
+  transition: none;
+}
+
+/* ──────────────────────────────────────────────
+   HEADER SCROLL SHADOW
+   ────────────────────────────────────────────── */
+.header-scrolled {
+  box-shadow: 0 4px 28px rgba(0,0,0,0.13) !important;
+}
+
+/* ──────────────────────────────────────────────
+   SECTION NUMBER COUNTER DECORATION
+   ────────────────────────────────────────────── */
+.linea-num-fx {
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.linea-num-fx:hover {
+  transform: scale(1.12) rotate(-4deg);
+  box-shadow: 0 6px 20px rgba(0,122,51,0.35);
+}
+
+/* ──────────────────────────────────────────────
+   SPLIT SECTION BORDER GLOW
+   ────────────────────────────────────────────── */
+.split-img-fx {
+  transition: transform 0.55s cubic-bezier(0.16,1,0.3,1),
+              box-shadow 0.55s ease;
+}
+.split-img-fx:hover {
+  transform: scale(1.025) translateY(-4px);
+  box-shadow: 0 28px 60px rgba(0,38,62,0.22), 0 0 0 4px rgba(0,122,51,0.25);
+}
+
+/* ──────────────────────────────────────────────
+   GALLERY ITEM HOVER
+   ────────────────────────────────────────────── */
+.gallery-item {
+  overflow: hidden;
+  border-radius: 1rem;
+  position: relative;
+  cursor: pointer;
+}
+.gallery-item img {
+  transition: transform 0.6s cubic-bezier(0.16,1,0.3,1), filter 0.4s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery-item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,38,62,0.7) 0%, transparent 55%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.gallery-item:hover img    { transform: scale(1.1); filter: brightness(0.85); }
+.gallery-item:hover::after { opacity: 1; }
+
+/* ──────────────────────────────────────────────
+   PRINCIPIO CARD HOVER
+   ────────────────────────────────────────────── */
+.principio-fx {
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+.principio-fx:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,122,51,0.15);
+  border-color: #007A33 !important;
+}
+
+/* ──────────────────────────────────────────────
+   STAGGER CHILDREN (applied via JS)
+   ────────────────────────────────────────────── */
+[data-stagger] > .reveal {
+  opacity: 0;
+  transform: translateY(36px);
+}
+
+/* ──────────────────────────────────────────────
+   BACK TO TOP BUTTON
+   ────────────────────────────────────────────── */
+#back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 999;
+  width: 44px;
+  height: 44px;
+  background: #007A33;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 16px rgba(0,122,51,0.4);
+  border: none;
+}
+#back-to-top.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+#back-to-top:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0,122,51,0.5);
+}

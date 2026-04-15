@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="stylesheet" href="css/effects.css"/>
 </head>
 <body class="font-sans text-om-text bg-white">
 
@@ -48,11 +49,11 @@
   <!-- PHOTO HERO -->
   <section class="relative pt-[72px]">
     <div class="relative py-32 pt-[130px]" style="background-image:url('asstes/imgs/taxis_1.jpg');background-size:cover;background-position:center;">
-      <div class="absolute inset-0 bg-gradient-to-br from-om-navy/95 to-om-navy/70"></div>
+      <div class="absolute inset-0 bg-gradient-to-br from-om-navy/95 to-om-navy/70 parallax-bg"></div>
       <div class="relative max-w-7xl mx-auto px-4 lg:px-8">
-        <span class="inline-block text-om-green text-xs font-bold uppercase tracking-widest mb-4">Observatorio de Movilidad A.C.</span>
-        <h2 class="text-4xl md:text-6xl font-extrabold text-white leading-tight max-w-3xl">Participa</h2>
-        <p class="mt-4 text-white/70 text-xl max-w-xl">Sé parte del cambio en la movilidad de Jalisco.</p>
+        <span class="inline-block text-om-green text-xs font-bold uppercase tracking-widest mb-4 reveal">Observatorio de Movilidad A.C.</span>
+        <h2 class="text-4xl md:text-6xl font-extrabold text-white leading-tight max-w-3xl reveal">Participa</h2>
+        <p class="mt-4 text-white/70 text-xl max-w-xl reveal">Sé parte del cambio en la movilidad de Jalisco.</p>
       </div>
     </div>
   </section>
@@ -61,9 +62,9 @@
   <section class="bg-white py-10 border-b border-gray-100">
     <div class="max-w-7xl mx-auto px-4 lg:px-8">
       <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 md:gap-10">
-        <img src="Logo_Hero_paginas.png" alt="Observatorio de Movilidad" class="h-28 w-auto flex-shrink-0"/>
+        <img src="Logo_Hero_paginas.png" alt="Observatorio de Movilidad" class="h-28 w-auto flex-shrink-0 reveal-left"/>
         <div class="w-px h-20 bg-om-green/20 hidden md:block flex-shrink-0"></div>
-        <div>
+        <div class="reveal-right">
           <nav class="text-xs text-om-muted mb-2">
             <a href="index.html" class="hover:text-om-green transition-colors">Inicio</a>
             <span class="mx-2 text-gray-300">/</span>
@@ -80,10 +81,10 @@
   <section class="bg-white py-20">
     <div class="max-w-7xl mx-auto px-4 lg:px-8">
       <div class="grid md:grid-cols-2 gap-16 items-center">
-        <div>
+        <div class="reveal-left">
           <span class="accent-bar"></span>
-          <span class="text-xs font-bold uppercase tracking-widest text-om-green">Espacio abierto</span>
-          <h2 class="text-3xl font-extrabold text-om-navy mt-3 mb-6 leading-tight">Un espacio para todos los comprometidos con la movilidad</h2>
+          <span class="text-xs font-bold uppercase tracking-widest text-om-green reveal" data-delay="0">Espacio abierto</span>
+          <h2 class="text-3xl font-extrabold text-om-navy mt-3 mb-6 leading-tight reveal">Un espacio para todos los comprometidos con la movilidad</h2>
           <p class="text-om-text leading-relaxed text-lg">
             El Observatorio de Movilidad es un espacio abierto a la participación de personas y organizaciones comprometidas con mejorar la movilidad. Buscamos integrar un grupo diverso e interdisciplinario: investigadores, especialistas, estudiantes, profesionales y ciudadanos con interés en aportar desde su experiencia.
           </p>
@@ -92,7 +93,7 @@
           </p>
           <a href="contacto.html" class="btn-green inline-block mt-8 px-8 py-4 text-base font-bold rounded-full shadow-sm hover:bg-green-800 transition-colors">Da el primer paso</a>
         </div>
-        <div class="relative">
+        <div class="relative split-img-fx reveal-right">
           <div class="overflow-hidden rounded-2xl aspect-[4/3] shadow-lg">
             <img src="asstes/imgs/taxis_2.jpg" alt="Participa" class="w-full h-full object-cover"/>
           </div>
@@ -121,14 +122,14 @@
     <div class="max-w-7xl mx-auto px-4 lg:px-8">
       <div class="text-center mb-14">
         <span class="accent-bar mx-auto"></span>
-        <span class="text-xs font-bold uppercase tracking-widest text-om-green">Modalidades</span>
-        <h2 class="text-3xl font-extrabold text-om-navy mt-3">¿Cómo quieres participar?</h2>
+        <span class="text-xs font-bold uppercase tracking-widest text-om-green reveal" data-delay="0">Modalidades</span>
+        <h2 class="text-3xl font-extrabold text-om-navy mt-3 reveal">¿Cómo quieres participar?</h2>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8" data-stagger>
 
         <!-- Asociado -->
-        <div class="card overflow-hidden group flex flex-col">
-          <div class="h-56 overflow-hidden">
+        <div class="card overflow-hidden group flex flex-col reveal card-glow">
+          <div class="h-56 overflow-hidden img-overlay">
             <img src="asstes/imgs/taxis_2.jpg" alt="Asociado" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
           </div>
           <div class="p-8 flex flex-col flex-1">
@@ -142,8 +143,8 @@
         </div>
 
         <!-- Colaborador -->
-        <div class="card overflow-hidden group flex flex-col">
-          <div class="h-56 overflow-hidden">
+        <div class="card overflow-hidden group flex flex-col reveal card-glow">
+          <div class="h-56 overflow-hidden img-overlay">
             <img src="asstes/imgs/ciclovia_2.png" alt="Colaborador" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
           </div>
           <div class="p-8 flex flex-col flex-1">
@@ -157,8 +158,8 @@
         </div>
 
         <!-- Aliado -->
-        <div class="card overflow-hidden group flex flex-col">
-          <div class="h-56 overflow-hidden">
+        <div class="card overflow-hidden group flex flex-col reveal card-glow">
+          <div class="h-56 overflow-hidden img-overlay">
             <img src="asstes/imgs/puerto_1.jpg" alt="Aliado" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
           </div>
           <div class="p-8 flex flex-col flex-1">
@@ -178,8 +179,8 @@
   <!-- CTA BANNER -->
   <section class="bg-om-green py-20">
     <div class="max-w-4xl mx-auto px-4 lg:px-8 text-center">
-      <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">Da el primer paso</h2>
-      <p class="text-white/80 text-lg mb-8 max-w-xl mx-auto">Escríbenos y cuéntanos cómo te gustaría contribuir. Estamos listos para sumar tu voz.</p>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4 reveal">Da el primer paso</h2>
+      <p class="text-white/80 text-lg mb-8 max-w-xl mx-auto reveal" data-delay="100">Escríbenos y cuéntanos cómo te gustaría contribuir. Estamos listos para sumar tu voz.</p>
       <a href="contacto.html" class="btn-white inline-block px-8 py-4 text-base font-bold rounded-full shadow-lg hover:shadow-xl transition-all">Contáctanos</a>
     </div>
   </section>
@@ -189,7 +190,7 @@
     <div class="max-w-7xl mx-auto px-6 pt-16 pb-8">
       <div class="grid md:grid-cols-4 gap-10 pb-10 border-b border-white/10">
         <div>
-          <img src="Logo_header_principal.png" alt="Observatorio de Movilidad" class="h-10 w-auto mb-5 brightness-0 invert"/>
+          <img src="Logo_header_principal.png" alt="Observatorio de Movilidad" class="h-10 w-auto mb-5 brightness-0 invert reveal"/>
           <p class="text-sm text-white/55 leading-relaxed">Espacio independiente y ciudadano que analiza, evalúa y propone mejoras para la movilidad en Jalisco.</p>
           <div class="flex gap-3 mt-6">
             <a href="#" aria-label="Instagram" class="w-9 h-9 rounded-full bg-white/10 hover:bg-om-green flex items-center justify-center transition-colors duration-200">
@@ -240,5 +241,6 @@
       document.getElementById('mobile-nav').classList.toggle('hidden');
     });
   </script>
+  <script src="js/effects.js" defer></script>
 </body>
 </html>
