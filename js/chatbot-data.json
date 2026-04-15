@@ -1,0 +1,586 @@
+{
+  "bot_name": "Asistente OM",
+  "greeting": "¡Hola! 👋 Soy el asistente del <strong>Observatorio de Movilidad</strong>. Puedo responder preguntas sobre quiénes somos, qué hacemos, cómo participar y más. ¿En qué puedo ayudarte?",
+  "fallback": [
+    "No tengo información específica sobre eso. ¿Puedo ayudarte con algo sobre el Observatorio o la movilidad en Jalisco?",
+    "Esa pregunta está fuera de mi alcance. Te invito a visitar nuestra sección de <a href='contacto.html'>contacto</a> para hablar directamente con el equipo.",
+    "No estoy seguro de cómo responder eso. Puedes reformular tu pregunta o explorar nuestras secciones: <a href='quienes-somos.html'>Quiénes somos</a>, <a href='que-hacemos.html'>Qué hacemos</a> o <a href='contacto.html'>Contacto</a>."
+  ],
+  "intents": [
+    {
+      "id": "saludo",
+      "patterns": [
+        "hola*",
+        "buenos dias*",
+        "buenas tardes*",
+        "buenas noches*",
+        "*saludos*",
+        "hey*",
+        "hi*"
+      ],
+      "responses": [
+        "¡Hola! 👋 Bienvenido al Observatorio de Movilidad. Puedo ayudarte a conocer nuestra organización, principios, actividades y cómo participar. ¿Qué te gustaría saber?",
+        "¡Buenos días! Estoy aquí para responder tus preguntas sobre el Observatorio de Movilidad. ¿En qué te puedo ayudar?"
+      ],
+      "suggestions": ["¿Qué es el Observatorio?", "¿Qué hacen?", "¿Cómo participo?", "Contacto"]
+    },
+    {
+      "id": "despedida",
+      "patterns": [
+        "adios*",
+        "hasta luego*",
+        "chao*",
+        "bye*",
+        "nos vemos*",
+        "gracias hasta luego*"
+      ],
+      "responses": [
+        "¡Hasta luego! Gracias por tu interés en el Observatorio de Movilidad. 🚶‍♂️",
+        "¡Hasta pronto! Si tienes más preguntas, aquí estaré. 👋"
+      ],
+      "suggestions": ["Contacto", "¿Cómo participo?"]
+    },
+    {
+      "id": "gracias",
+      "patterns": [
+        "gracias*",
+        "*muchas gracias*",
+        "*te lo agradezco*",
+        "*muy util*",
+        "*muy bien*",
+        "perfecto*",
+        "excelente*"
+      ],
+      "responses": [
+        "¡Con mucho gusto! 😊 Si tienes más preguntas, no dudes en escribirme.",
+        "¡Para eso estoy! ¿Hay algo más en lo que pueda ayudarte sobre el Observatorio?"
+      ],
+      "suggestions": ["¿Cómo participo?", "Principios", "Contacto"]
+    },
+    {
+      "id": "que_es_om",
+      "patterns": [
+        "*que es el observatorio*",
+        "*que es observatorio de movilidad*",
+        "*observatorio de movilidad*que es*",
+        "*de que trata*",
+        "*de que se trata*",
+        "*que organización*",
+        "*que organizacion*",
+        "*que tipo de organizacion*"
+      ],
+      "responses": [
+        "El <strong>Observatorio de Movilidad</strong> es una asociación civil (A.C.) sin fines de lucro, independiente y sin afiliación partidista, dedicada a mejorar la movilidad en Jalisco desde una perspectiva técnica y ciudadana. Analizamos decisiones públicas, generamos información clara y proponemos mejoras.",
+        "Somos un espacio independiente y ciudadano que analiza, evalúa y propone soluciones para la movilidad en Jalisco. Lo integran investigadores, especialistas y ciudadanos con el objetivo de aportar información útil para tomar mejores decisiones públicas."
+      ],
+      "suggestions": ["¿Quiénes lo integran?", "¿Qué hacen?", "Principios", "¿Cómo participo?"]
+    },
+    {
+      "id": "quienes_son",
+      "patterns": [
+        "*quienes son*",
+        "*quiénes son*",
+        "*quienes integran*",
+        "*quiénes integran*",
+        "*quienes forman*",
+        "*quiénes forman*",
+        "*quienes conforman*",
+        "*quiénes conforman*",
+        "*quienes lo componen*"
+      ],
+      "responses": [
+        "Somos un grupo interdisciplinario integrado por <strong>investigadores, especialistas, profesionales y ciudadanos</strong> interesados en transformar la forma en que nos movemos. Compartimos una convicción: la movilidad debe ser segura, accesible e incluyente para todas las personas.",
+        "El Observatorio lo integran personas investigadoras, especialistas en transporte, profesionales y ciudadanos comprometidos con mejorar la movilidad en Jalisco. Trabajamos desde distintas perspectivas, pero con un mismo objetivo."
+      ],
+      "suggestions": ["¿Qué hacen?", "Estructura", "¿Cómo participo?"]
+    },
+    {
+      "id": "mision_objetivo",
+      "patterns": [
+        "*cual es su mision*",
+        "*cuál es su misión*",
+        "*cual es su objetivo*",
+        "*cuál es su objetivo*",
+        "*para que sirve*",
+        "*para qué sirve*",
+        "*objetivo del observatorio*",
+        "*proposito*",
+        "*propósito*"
+      ],
+      "responses": [
+        "Nuestro objetivo es <strong>aportar información útil y generar propuestas</strong> que ayuden a tomar mejores decisiones públicas en materia de movilidad. Trabajamos con base en evidencia, datos y análisis, pero también desde la experiencia cotidiana de quienes viven la ciudad.",
+        "Nuestra misión es observar con seriedad la movilidad en Jalisco: sin información confiable no hay buenas decisiones. Aportamos claridad, señalamos lo que no funciona y contribuimos a que la movilidad sea eficiente, segura, accesible e incluyente."
+      ],
+      "suggestions": ["¿Qué hacen?", "Principios", "Líneas de acción"]
+    },
+    {
+      "id": "que_hacen",
+      "patterns": [
+        "*que hacen*",
+        "*qué hacen*",
+        "*actividades*",
+        "*a que se dedican*",
+        "*a qué se dedican*",
+        "*trabajo del observatorio*",
+        "*que tipo de trabajo*",
+        "*que realizan*",
+        "*qué realizan*"
+      ],
+      "responses": [
+        "Realizamos tres tipos de trabajo principal:<br>• <strong>Observamos y analizamos</strong> las decisiones públicas que impactan la movilidad: transporte, infraestructura y seguridad vial.<br>• <strong>Generamos información</strong> clara — datos, diagnósticos e indicadores — para entender qué está pasando.<br>• <strong>Elaboramos propuestas</strong> y recomendaciones técnicas dirigidas a autoridades con enfoque constructivo.",
+        "Damos seguimiento a decisiones públicas sobre transporte e infraestructura, generamos datos e indicadores, elaboramos propuestas técnicas e impulsamos la participación ciudadana. También recibimos y canalizamos reportes ciudadanos sobre problemas de movilidad."
+      ],
+      "suggestions": ["Líneas de acción", "Propuestas", "Reportar problema", "Contacto"]
+    },
+    {
+      "id": "propuestas",
+      "patterns": [
+        "*propuestas*",
+        "*recomendaciones*",
+        "*que proponen*",
+        "*qué proponen*",
+        "*soluciones*",
+        "*elaboran propuestas*"
+      ],
+      "responses": [
+        "Elaboramos <strong>propuestas y recomendaciones técnicas</strong> dirigidas a autoridades y actores públicos. Nuestro enfoque es constructivo: señalar lo que no funciona, pero sobre todo aportar soluciones. Las propuestas se basan en evidencia, datos y análisis técnico.",
+        "Generamos recomendaciones técnicas basadas en evidencia para mejorar la movilidad. Nuestras propuestas van dirigidas a autoridades de Jalisco con el objetivo de incidir en políticas públicas de transporte, infraestructura y seguridad vial."
+      ],
+      "suggestions": ["¿Qué hacen?", "Líneas de acción", "Datos e información"]
+    },
+    {
+      "id": "reportar_problema",
+      "patterns": [
+        "*reportar*",
+        "*denuncia*",
+        "*queja*",
+        "*problema de movilidad*",
+        "*como reporto*",
+        "*cómo reporto*",
+        "*donde reporto*",
+        "*dónde reporto*",
+        "*reporte ciudadano*",
+        "*reportes ciudadanos*"
+      ],
+      "responses": [
+        "Recibimos, canalizamos y damos seguimiento a <strong>reportes ciudadanos, quejas y denuncias</strong> relacionadas con problemas de movilidad. El objetivo es visibilizarlos y contribuir a su atención por las instancias correspondientes. Puedes contactarnos a través de nuestra <a href='contacto.html'>página de contacto</a>.",
+        "Si tienes un reporte sobre un problema de movilidad (infraestructura, transporte, seguridad vial), puedes enviarlo a través de nuestra <a href='contacto.html'>página de contacto</a>. Lo canalizamos a las instancias correspondientes."
+      ],
+      "suggestions": ["Ir a Contacto", "¿Qué hacen?", "Seguridad vial"]
+    },
+    {
+      "id": "principios",
+      "patterns": [
+        "*principios*",
+        "*valores*",
+        "*como trabajan*",
+        "*cómo trabajan*",
+        "*bajo que principios*",
+        "*bajo qué principios*",
+        "*guia su trabajo*",
+        "*guía su trabajo*"
+      ],
+      "responses": [
+        "Nuestro trabajo se guía por <strong>cinco principios</strong>:<br>1. <strong>Independencia</strong>: no respondemos a intereses partidistas ni particulares.<br>2. <strong>Rigor técnico</strong>: nuestras opiniones se basan en evidencia y análisis.<br>3. <strong>Transparencia</strong>: la información que generamos es pública y accesible.<br>4. <strong>Legalidad</strong>: actuamos conforme al marco normativo vigente.<br>5. <strong>Participación ciudadana</strong>: creemos en la colaboración entre sociedad y autoridades."
+      ],
+      "suggestions": ["Independencia", "Transparencia", "¿Qué hacen?", "Líneas de acción"]
+    },
+    {
+      "id": "independencia",
+      "patterns": [
+        "*independencia*",
+        "*son independientes*",
+        "*partido politico*",
+        "*partido político*",
+        "*afiliacion partidista*",
+        "*afiliación partidista*",
+        "*quien los financia*",
+        "*quién los financia*"
+      ],
+      "responses": [
+        "El Observatorio es completamente <strong>independiente</strong>: no respondemos a intereses partidistas ni particulares. Somos una asociación civil sin fines de lucro y sin afiliación a ningún partido político. Nuestras opiniones se basan exclusivamente en evidencia y análisis técnico.",
+        "Somos una organización <strong>autónoma e independiente</strong>. No tenemos afiliación partidista y no respondemos a intereses políticos o económicos particulares. Esto nos permite mantener una postura clara, firme y responsable."
+      ],
+      "suggestions": ["Principios", "¿Qué son?", "Transparencia"]
+    },
+    {
+      "id": "transparencia",
+      "patterns": [
+        "*transparencia*",
+        "*informacion publica*",
+        "*información pública*",
+        "*acceso a informacion*",
+        "*acceso a información*",
+        "*datos abiertos*"
+      ],
+      "responses": [
+        "La <strong>transparencia</strong> es uno de nuestros principios fundamentales: toda la información que generamos es pública y accesible. Promovemos el uso de datos abiertos y difundimos nuestros análisis para que cualquier persona pueda consultarlos.",
+        "Trabajamos con transparencia total: la información, diagnósticos e indicadores que generamos están disponibles para la ciudadanía. Creemos que sin información confiable y accesible no puede haber buenas decisiones públicas."
+      ],
+      "suggestions": ["Principios", "Datos e información", "¿Qué hacen?"]
+    },
+    {
+      "id": "lineas_accion",
+      "patterns": [
+        "*lineas de accion*",
+        "*líneas de acción*",
+        "*areas de trabajo*",
+        "*áreas de trabajo*",
+        "*temas que abordan*",
+        "*en que se enfocan*",
+        "*en qué se enfocan*",
+        "*enfoque*",
+        "*temas principales*"
+      ],
+      "responses": [
+        "Trabajamos en <strong>cinco líneas principales</strong>:<br>1. <strong>Evaluación de políticas públicas</strong>: seguimiento a programas y proyectos.<br>2. <strong>Datos e información</strong>: recopilación y difusión de información sobre transporte y seguridad vial.<br>3. <strong>Seguridad vial</strong>: acciones para reducir muertes y lesiones por siniestros.<br>4. <strong>Participación ciudadana</strong>: foros y mesas de trabajo.<br>5. <strong>Incidencia y colaboración</strong>: vínculos con autoridades, academia y sociedad civil."
+      ],
+      "suggestions": ["Seguridad vial", "Participación ciudadana", "Datos e información", "¿Cómo participo?"]
+    },
+    {
+      "id": "evaluacion_politicas",
+      "patterns": [
+        "*evaluacion de politicas*",
+        "*evaluación de políticas*",
+        "*politicas publicas*",
+        "*políticas públicas*",
+        "*programas de transporte*",
+        "*proyectos de movilidad*",
+        "*seguimiento a proyectos*"
+      ],
+      "responses": [
+        "Damos <strong>seguimiento a programas y proyectos</strong> de movilidad para entender su impacto real. Evaluamos si las políticas públicas en materia de transporte e infraestructura están cumpliendo sus objetivos, con base en datos y análisis técnico.",
+        "Una de nuestras líneas de acción es evaluar las políticas públicas de movilidad. Analizamos programas, proyectos e inversiones en transporte e infraestructura vial para medir su impacto y generar recomendaciones de mejora."
+      ],
+      "suggestions": ["Líneas de acción", "Propuestas", "¿Qué hacen?"]
+    },
+    {
+      "id": "datos_informacion",
+      "patterns": [
+        "*datos*",
+        "*informacion*",
+        "*información*",
+        "*estadisticas*",
+        "*estadísticas*",
+        "*indicadores*",
+        "*diagnosticos*",
+        "*diagnósticos*",
+        "*donde encuentro datos*",
+        "*dónde encuentro datos*"
+      ],
+      "responses": [
+        "Recopilamos, analizamos y difundimos <strong>información sobre transporte y seguridad vial</strong>, promoviendo el uso de datos abiertos. Generamos diagnósticos e indicadores para entender qué está pasando en la movilidad de Jalisco y qué se puede mejorar.",
+        "Una de nuestras funciones clave es generar y difundir <strong>datos claros e indicadores</strong> sobre movilidad. Creemos que sin información confiable no hay buenas decisiones públicas. Toda nuestra información es pública y accesible."
+      ],
+      "suggestions": ["Transparencia", "Líneas de acción", "¿Qué hacen?"]
+    },
+    {
+      "id": "seguridad_vial",
+      "patterns": [
+        "*seguridad vial*",
+        "*accidentes*",
+        "*accidente de transito*",
+        "*accidente de tránsito*",
+        "*siniestros*",
+        "*muertes viales*",
+        "*lesiones viales*",
+        "*atropellamiento*",
+        "*choques*"
+      ],
+      "responses": [
+        "La <strong>seguridad vial</strong> es una de nuestras líneas de acción prioritarias. Impulsamos acciones y políticas que reduzcan muertes y lesiones por siniestros de tránsito en Jalisco. Creemos que cada muerte vial es prevenible y trabajamos para visibilizar este problema y generar propuestas concretas.",
+        "Trabajamos activamente en <strong>seguridad vial</strong>: analizamos datos de siniestros, evaluamos políticas existentes e impulsamos medidas para reducir muertes y lesiones en las vías. Contamos con un Comité Técnico de Seguridad Vial dedicado a este tema."
+      ],
+      "suggestions": ["Comités técnicos", "Líneas de acción", "Reportar problema"]
+    },
+    {
+      "id": "transporte_publico",
+      "patterns": [
+        "*transporte publico*",
+        "*transporte público*",
+        "*camion*",
+        "*camión*",
+        "*autobus*",
+        "*autobús*",
+        "*tren ligero*",
+        "*macrobus*",
+        "*macrobús*",
+        "*ibus*"
+      ],
+      "responses": [
+        "El <strong>Transporte Público</strong> es uno de los temas centrales que analizamos. Contamos con un Comité Técnico de Transporte Público que estudia las condiciones del sistema, evalúa políticas y genera propuestas para mejorar el servicio en la Zona Metropolitana de Guadalajara.",
+        "Analizamos el sistema de transporte público de Jalisco: cobertura, calidad del servicio, tarifas y políticas. Nuestro Comité Técnico de Transporte Público trabaja en generar información y recomendaciones para mejorar la movilidad de las personas usuarias."
+      ],
+      "suggestions": ["Comités técnicos", "¿Qué hacen?", "Reportar problema"]
+    },
+    {
+      "id": "movilidad_activa",
+      "patterns": [
+        "*movilidad activa*",
+        "*ciclismo*",
+        "*ciclistas*",
+        "*bicicleta*",
+        "*peatonal*",
+        "*caminar*",
+        "*infraestructura ciclista*",
+        "*carriles bici*"
+      ],
+      "responses": [
+        "La <strong>Movilidad Activa</strong> (ciclismo, caminata, micromovilidad) es uno de los temas que abordamos. Contamos con un Comité Técnico de Movilidad Activa que analiza condiciones para peatones y ciclistas, y propone mejoras en infraestructura para que moverse sin auto sea seguro y posible.",
+        "Impulsamos la movilidad activa: bicicleta, caminata y otros medios no motorizados. Analizamos la infraestructura disponible, las condiciones de seguridad y las políticas que afectan a peatones y ciclistas en Jalisco."
+      ],
+      "suggestions": ["Comités técnicos", "Seguridad vial", "Líneas de acción"]
+    },
+    {
+      "id": "participacion_ciudadana_linea",
+      "patterns": [
+        "*participacion ciudadana*",
+        "*participación ciudadana*",
+        "*involucrarse*",
+        "*foros*",
+        "*mesas de trabajo*",
+        "*dialogo ciudadano*",
+        "*diálogo ciudadano*"
+      ],
+      "responses": [
+        "Impulsamos la <strong>participación ciudadana</strong> abriendo espacios de diálogo como foros y mesas de trabajo para involucrar a la sociedad en la mejora de la movilidad. Creemos en la colaboración entre ciudadanía y autoridades como base para mejores políticas públicas.",
+        "La participación ciudadana es tanto un principio como una línea de acción para nosotros. Organizamos foros, mesas de trabajo y espacios de diálogo donde distintas voces puedan involucrarse en los temas de movilidad de Jalisco."
+      ],
+      "suggestions": ["¿Cómo participo?", "Principios", "Estructura"]
+    },
+    {
+      "id": "incidencia_colaboracion",
+      "patterns": [
+        "*incidencia*",
+        "*colaboracion*",
+        "*colaboración*",
+        "*alianzas*",
+        "*autoridades*",
+        "*gobierno*",
+        "*academia*",
+        "*sector privado*",
+        "*organizaciones civiles*"
+      ],
+      "responses": [
+        "Construimos puentes con <strong>autoridades, academia, sector privado y organizaciones civiles</strong> para mejorar la movilidad desde distintas perspectivas. Creemos que la incidencia efectiva requiere colaboración entre múltiples actores.",
+        "Una de nuestras líneas de trabajo es la incidencia y colaboración: trabajamos con autoridades, universidades, sector privado y organizaciones de la sociedad civil para generar cambios reales en las políticas de movilidad."
+      ],
+      "suggestions": ["¿Cómo participo?", "Líneas de acción", "Contacto"]
+    },
+    {
+      "id": "como_participar",
+      "patterns": [
+        "*como participo*",
+        "*cómo participo*",
+        "*como puedo participar*",
+        "*cómo puedo participar*",
+        "*quiero participar*",
+        "*quiero unirme*",
+        "*como me uno*",
+        "*cómo me uno*",
+        "*como colaborar*",
+        "*cómo colaborar*",
+        "*como ser parte*",
+        "*cómo ser parte*",
+        "*unirse al observatorio*"
+      ],
+      "responses": [
+        "El Observatorio es un espacio abierto a la participación. Puedes participar como:<br>• <strong>Asociado</strong>: integrándote formalmente a la organización.<br>• <strong>Colaborador</strong>: contribuyendo en análisis, información o actividades específicas.<br>• <strong>Aliado</strong>: apoyando desde tu organización o área de trabajo.<br><br>Buscamos investigadores, especialistas, estudiantes, profesionales y ciudadanos comprometidos. Visita <a href='participa.html'>Participa</a> para más información.",
+        "Puedes sumarte al Observatorio de varias formas: como asociado, colaborador o aliado. Buscamos un grupo diverso e interdisciplinario con interés en mejorar la movilidad. Visita nuestra sección <a href='participa.html'>Participa</a> o escríbenos por <a href='contacto.html'>contacto</a>."
+      ],
+      "suggestions": ["Tipos de asociados", "Comités técnicos", "Contacto"]
+    },
+    {
+      "id": "tipos_asociados",
+      "patterns": [
+        "*tipos de asociados*",
+        "*tipos de miembros*",
+        "*asociado fundador*",
+        "*asociado activo*",
+        "*asociado honorario*",
+        "*fundador*",
+        "*honorario*",
+        "*activo*"
+      ],
+      "responses": [
+        "El Observatorio cuenta con tres tipos de asociados:<br>• <strong>Fundadores</strong>: quienes impulsaron la creación de la organización.<br>• <strong>Activos</strong>: integrantes con participación regular en las actividades del Observatorio.<br>• <strong>Honorarios</strong>: personas reconocidas por su contribución especial a la movilidad.<br><br>Consulta <a href='estructura.html'>Estructura</a> para más detalles.",
+        "Los tipos de asociados son: <strong>Fundadores, Activos y Honorarios</strong>. Cada categoría tiene un rol específico dentro de la organización. Para conocer cómo integrarte visita <a href='estructura.html'>Estructura</a> o <a href='participa.html'>Participa</a>."
+      ],
+      "suggestions": ["¿Cómo participo?", "Comités técnicos", "Estructura"]
+    },
+    {
+      "id": "estructura",
+      "patterns": [
+        "*estructura*",
+        "*como se organiza*",
+        "*cómo se organiza*",
+        "*organizacion interna*",
+        "*organización interna*",
+        "*como esta organizado*",
+        "*cómo está organizado*",
+        "*grupos de trabajo*"
+      ],
+      "responses": [
+        "El Observatorio se organiza para facilitar el trabajo técnico y la participación. Cuenta con distintos tipos de asociados (Fundadores, Activos, Honorarios) y <strong>cinco Comités Técnicos</strong>: Seguridad Vial, Transporte Público, Movilidad Activa, Datos y Evaluación, y Participación Ciudadana. Visita <a href='estructura.html'>Estructura</a> para más detalles.",
+        "Contamos con una estructura basada en Comités Técnicos que reúnen distintas perspectivas para analizar problemas, generar propuestas y dar seguimiento a temas de movilidad. Los integrantes pueden ser asociados fundadores, activos u honorarios."
+      ],
+      "suggestions": ["Comités técnicos", "¿Cómo participo?", "Tipos de asociados"]
+    },
+    {
+      "id": "comites",
+      "patterns": [
+        "*comites*",
+        "*comités*",
+        "*comite tecnico*",
+        "*comité técnico*",
+        "*cuantos comites*",
+        "*cuántos comités*",
+        "*que comites*",
+        "*qué comités*",
+        "*comites de trabajo*"
+      ],
+      "responses": [
+        "Contamos con <strong>cinco Comités Técnicos</strong>:<br>1. 🛑 <strong>Seguridad Vial</strong><br>2. 🚌 <strong>Transporte Público</strong><br>3. 🚴 <strong>Movilidad Activa</strong><br>4. 📊 <strong>Datos y Evaluación</strong><br>5. 🤝 <strong>Participación Ciudadana</strong><br><br>Cada comité reúne personas con conocimiento específico para analizar problemas y generar propuestas en esa área.",
+        "Los Comités Técnicos son grupos de trabajo especializados. Tenemos cinco: Seguridad Vial, Transporte Público, Movilidad Activa, Datos y Evaluación, y Participación Ciudadana. Puedes participar en el comité que mejor se alinee con tu experiencia."
+      ],
+      "suggestions": ["Seguridad vial", "Transporte público", "¿Cómo participo?"]
+    },
+    {
+      "id": "contacto",
+      "patterns": [
+        "*contacto*",
+        "*contactar*",
+        "*como contactar*",
+        "*cómo contactar*",
+        "*correo*",
+        "*email*",
+        "*telefono*",
+        "*teléfono*",
+        "*hablar con*",
+        "*comunicarse*",
+        "*escribirles*"
+      ],
+      "responses": [
+        "Puedes contactarnos a través de nuestra <a href='contacto.html'>página de contacto</a>. Ahí encontrarás el formulario de contacto y la ubicación del Observatorio. También puedes seguirnos en nuestras redes sociales.",
+        "Visita nuestra <a href='contacto.html'>página de contacto</a> para enviarnos un mensaje, conocer nuestra ubicación o comunicarte con el equipo. Estamos disponibles para responder preguntas, recibir reportes y atender colaboraciones."
+      ],
+      "suggestions": ["Ir a Contacto", "Redes sociales", "¿Cómo participo?"]
+    },
+    {
+      "id": "ubicacion",
+      "patterns": [
+        "*donde estan*",
+        "*dónde están*",
+        "*donde se ubican*",
+        "*dónde se ubican*",
+        "*ubicacion*",
+        "*ubicación*",
+        "*direccion*",
+        "*dirección*",
+        "*donde los encuentro*",
+        "*dónde los encuentro*",
+        "*jalisco*",
+        "*guadalajara*"
+      ],
+      "responses": [
+        "El Observatorio de Movilidad trabaja en <strong>Jalisco</strong>, con enfoque en la Zona Metropolitana de Guadalajara. Para ver la ubicación exacta y cómo llegar, visita nuestra <a href='contacto.html'>página de contacto</a>.",
+        "Nos enfocamos en la movilidad de <strong>Jalisco y Guadalajara</strong>. Puedes ver nuestra ubicación en el mapa de la <a href='contacto.html'>página de contacto</a>."
+      ],
+      "suggestions": ["Contacto", "¿Qué hacen?"]
+    },
+    {
+      "id": "redes_sociales",
+      "patterns": [
+        "*redes sociales*",
+        "*instagram*",
+        "*facebook*",
+        "*youtube*",
+        "*tiktok*",
+        "*donde los sigo*",
+        "*dónde los sigo*",
+        "*redes*",
+        "*en que redes*",
+        "*en qué redes*"
+      ],
+      "responses": [
+        "Puedes encontrarnos en nuestras redes sociales: <strong>Instagram, Facebook, YouTube y TikTok</strong>. Ahí compartimos información sobre movilidad, análisis, eventos y novedades del Observatorio. Los enlaces están en el pie de página de este sitio.",
+        "Estamos activos en <strong>Instagram, Facebook, YouTube y TikTok</strong>. Síguenos para mantenerte informado sobre movilidad en Jalisco, nuestros análisis y actividades."
+      ],
+      "suggestions": ["Contacto", "¿Qué hacen?"]
+    },
+    {
+      "id": "costo_gratuito",
+      "patterns": [
+        "*costo*",
+        "*cuanto cuesta*",
+        "*cuánto cuesta*",
+        "*es gratis*",
+        "*es gratuito*",
+        "*cobran*",
+        "*precio*",
+        "*pago*"
+      ],
+      "responses": [
+        "El Observatorio de Movilidad es una <strong>asociación civil sin fines de lucro</strong>. Nuestra información, análisis y publicaciones son de acceso público y gratuito. Para más información sobre colaboraciones o apoyos, escríbenos por <a href='contacto.html'>contacto</a>.",
+        "Somos una organización sin fines de lucro. Nuestros análisis, datos e información son <strong>públicos y gratuitos</strong>. La participación como colaborador o aliado no tiene costo; el tipo de asociado activo puede tener requisitos específicos que puedes consultar con nosotros."
+      ],
+      "suggestions": ["¿Cómo participo?", "Contacto"]
+    },
+    {
+      "id": "movilidad_general",
+      "patterns": [
+        "*movilidad*",
+        "*transporte*",
+        "*trafico*",
+        "*tráfico*",
+        "*vialidades*",
+        "*infraestructura vial*",
+        "*como mejorar la movilidad*",
+        "*cómo mejorar la movilidad*"
+      ],
+      "responses": [
+        "La <strong>movilidad</strong> define cómo vivimos: el tiempo que perdemos, los riesgos que enfrentamos y las oportunidades a las que podemos acceder. Cuando falla, no solo complica los traslados: también reduce la calidad de vida y profundiza desigualdades. Por eso trabajamos para mejorarla.",
+        "Mejorar la movilidad no es opcional — es una condición para una ciudad más segura, accesible y justa. Trabajamos analizando transporte, infraestructura y seguridad vial para generar información y propuestas que ayuden a tomar mejores decisiones."
+      ],
+      "suggestions": ["¿Qué es el Observatorio?", "Líneas de acción", "Seguridad vial"]
+    },
+    {
+      "id": "publicaciones_informes",
+      "patterns": [
+        "*publicaciones*",
+        "*informes*",
+        "*reportes*",
+        "*documentos*",
+        "*investigaciones*",
+        "*analisis publicados*",
+        "*análisis publicados*",
+        "*donde encuentro sus*"
+      ],
+      "responses": [
+        "Generamos <strong>diagnósticos, indicadores e informes</strong> sobre movilidad en Jalisco. Toda nuestra información es pública y accesible. Para conocer nuestras publicaciones más recientes, te invitamos a seguirnos en redes sociales o contactarnos directamente.",
+        "Producimos análisis, diagnósticos e indicadores basados en evidencia. Nuestra información es de acceso público. Contáctanos a través de <a href='contacto.html'>nuestra página</a> para conocer el catálogo de publicaciones disponibles."
+      ],
+      "suggestions": ["Datos e información", "Contacto", "Redes sociales"]
+    },
+    {
+      "id": "paginas_sitio",
+      "patterns": [
+        "*paginas del sitio*",
+        "*páginas del sitio*",
+        "*secciones*",
+        "*que hay en el sitio*",
+        "*qué hay en el sitio*",
+        "*donde encuentro*",
+        "*dónde encuentro*",
+        "*menu*",
+        "*menú*",
+        "*navegacion*",
+        "*navegación*"
+      ],
+      "responses": [
+        "El sitio web tiene estas secciones:<br>• <a href='index.html'>🏠 Inicio</a> — Bienvenida y resumen<br>• <a href='quienes-somos.html'>👥 Quiénes Somos</a> — Sobre el Observatorio<br>• <a href='que-hacemos.html'>⚙️ Qué Hacemos</a> — Actividades y trabajo<br>• <a href='principios.html'>📋 Principios</a> — Valores y líneas de acción<br>• <a href='participa.html'>🤝 Participa</a> — Cómo unirte<br>• <a href='estructura.html'>🏛️ Estructura</a> — Organización y comités<br>• <a href='contacto.html'>📬 Contacto</a> — Formulario y ubicación"
+      ],
+      "suggestions": ["¿Qué es el Observatorio?", "¿Cómo participo?", "Contacto"]
+    }
+  ]
+}
